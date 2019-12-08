@@ -13,11 +13,19 @@
 <body>
     <!-- フォーム画面 -->
     <div class="content">
-        </h1>入会申込み</h1>
+        <h1>入会申込み</h1>
         <p>入会するには、次のフォームに必要事項をご記入ください。</p>
-        <p>メールアドレス<input type="email" name="mymail"></p>
-        <p>パスワード<input type="password" name="passcode"></p>
-        <p><button type="submit">登録する</button></p>
+        <div class="control">
+            <label for="mymail">メールアドレス<span class="required">必須</span></label>
+            <input id="mymail" type="email" name="mymail">
+        </div>
+        <div class="control">
+            <label for="passcord">パスワード<span class="required">必須</span></label>
+            <input id="passcord" type="password" name="passcode">
+        </div>
+        <div class="control">
+            <button type="submit">登録する</button>
+        </div>
     </div>
 </body>
 
